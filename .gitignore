@@ -1,0 +1,7 @@
+dev-startup.sh
+.DS_Store
+node_modules
+*/.vscode
+launch.json
+config.js
+config.*.js
