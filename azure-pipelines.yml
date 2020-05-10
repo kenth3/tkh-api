@@ -23,11 +23,13 @@ stages:
     - task: Docker@2
       inputs:
         command: 'login'
+        containerRegistry: KenthDockerHub
         
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build and push tkh-api image
       inputs:
-        command: build
+        command: buildAndPush
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        repository: kenth/tkh-api
         tags: |
-          $(tag)
+          latest
