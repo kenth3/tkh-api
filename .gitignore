@@ -4,4 +4,5 @@ node_modules
 */.vscode
 launch.json
 config.js
-config.*.js
+config.development.js
+local.env
