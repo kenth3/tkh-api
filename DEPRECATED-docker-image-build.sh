@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# NOTE: this file isn't used any more
+
 # The following 2 lines should not be necessary any more now that the config values exist as environment 
 # variables, and populated as part 
 # rm ./lib/config/config.development.js

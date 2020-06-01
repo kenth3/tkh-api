@@ -4,8 +4,8 @@ FROM node:lts
 COPY . /app
 WORKDIR /app
 
-RUN chmod +x docker-image-build.sh 
-RUN ./docker-image-build.sh
+RUN npm i npm
+RUN npm install
 
 EXPOSE 8080 
 
